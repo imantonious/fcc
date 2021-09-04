@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">TITLE</h1>
+  <p id="description">SHORT DESCRIPTION</p>
+
+  <!-- FORM -->
+  <form action="" method="get" id="survey-form">
+    <!-- NAME -->
+    <label for="name" id="name-label">enter your name</label>
+    <input placeholder="enter name" type="text" name="name" id="name" required />
+    <!-- EMAIL -->
+    <label for="email" id="email-label">enter your email</label>
+    <input placeholder="enter email" type="email" name="email" id="email" required />
+    <!-- NUMBER -->
+    <label for="number" id="number-label">Enter your age:</label>
+    <input placeholder="age" type="number" id="number" name="number" min="1" max="100" />
+
+    <!-- DROPDOWN -->
+    <label for="dropdown">Choose a preferred suffix:</label>
+
+    <select name="suffix" id="dropdown">
+      <option disabled selected>--Please choose an option--</option>
+      <option value="dr">Dr.</option>
+      <option value="esq">Esq.</option>
+      <option value="hon">Hon.</option>
+      <option value="jr">Jr.</option>
+      <option value="mr">Mr.</option>
+      <option value="mrs">Mrs.</option>
+      <option value="ms">Ms.</option>
+      <option value="messrs">Messrs.</option>
+      <option value="mmes">Mmes.</option>
+      <option value="msgr">Msgr.</option>
+      <option value="prof">Prof.</option>
+      <option value="rev">Rev.</option>
+      <option value="rt">Rt.</option>
+      <option value="sr">Sr.</option>
+      <option value="st">St.</option>
+      <option value="none">N/A</option>
+    </select>
+
+    <!-- RADIO BUTTONS -->
+    <p>How do you identify:</p>
+
+    <div>
+      <input type="radio" name="radio" value="non-binary" checked>
+      <label for="radio">Non-Binary</label>
+    </div>
+
+    <div>
+      <input type="radio" name="radio" value="variant">
+      <label for="radio">Gender-Variant / Non-Conforming</label>
+    </div>
+
+    <div>
+      <input type="radio" name="radio" value="male">
+      <label for="radio">Male</label>
+    </div>
+
+    <div>
+      <input type="radio" name="radio" value="female">
+      <label for="radio">Female</label>
+    </div>
+
+    <div>
+      <input type="radio" name="radio" value="trans-male">
+      <label for="radio">Transgender Male</label>
+    </div>
+
+    <div>
+      <input type="radio" name="radio" value="trans-female">
+      <label for="radio">Transgender Female</label>
+    </div>
+
+    <div>
+      <input type="radio" name="radio" value="shush">
+      <label for="radio">Prefer Not to Say</label>
+    </div>
+
+    <!-- CHECKBOXES -->
+    <p>Which of these have you heard of:</p>
+
+    <div>
+      <input type="checkbox" name="cpp" value="cpp">
+      <label for="cpp">C++</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="javascript" value="javascript">
+      <label for="javascript">JavaScript</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="php" value="php">
+      <label for="php">PHP</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="python" value="python">
+      <label for="python">Python</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="go" value="go">
+      <label for="go">Go (GoLang)</label>
+    </div>
+
+    <!-- TEXTAREA -->
+    <label for="comments">Tell us your story:</label>
+
+    <textarea id="comments" name="comments" rows="6" cols="33" placeholder="Enter your comment here..."></textarea>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
